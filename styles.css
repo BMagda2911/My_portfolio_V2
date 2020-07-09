@@ -34,7 +34,7 @@ a:hover {
 .nav {
   display: flex;
   justify-content: space-around;
-  font-weight: 1000;
+  font-weight: bolder;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -89,7 +89,7 @@ header .profile-image:hover {
   color: white;
 }
 .card {
-  margin: 30px;
+  margin: 15px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -151,9 +151,6 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
@@ -187,7 +184,6 @@ a.social:hover {
     max-width: 1200px;
     padding: 0 30px;
   }
-
 
   main {
     padding-top: 20px;
