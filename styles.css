@@ -42,7 +42,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: beige;
     font-size: 25px;
 }
 .nav li {
@@ -61,10 +61,11 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-header {
   line-height: 1.5;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 250px;
@@ -78,15 +79,15 @@ header .profile-image:hover {
 }
 .tag {
   background-color: transparent;
-  color: white;
+  color: beige;
   padding: 10px;
   border-radius: 5px;
   display: table;
-  margin: 10px auto;
+  margin: 40px auto;
 } 
 .location {
   background-color: transparent;
-  color: white;
+  color: beige;
 }
 .card {
   margin: 15px;
@@ -104,6 +105,7 @@ header .profile-image:hover {
 
 .card li {
   padding-bottom: 10px;
+  list-style-type: circle;
 }
 
 ul.skills {
@@ -160,7 +162,7 @@ a.linkedin {
 }
 a.github {
   background-image: url(images/sleek-github-128.png);
-  opacity: 0.5;
+  opacity: 0.6;
 }
 a.social:hover {
   opacity: 1;
@@ -172,7 +174,7 @@ a.social:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
-  .flex {
+  .content {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
       max-width: 1200px;
