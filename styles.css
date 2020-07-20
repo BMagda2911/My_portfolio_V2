@@ -5,6 +5,8 @@
   
 body {
   margin: 0;
+  padding-left: 0px;
+  padding-right: 0px;
   text-align: center;
   font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
   color: #222;
@@ -13,6 +15,7 @@ body {
 /* Link Styles */
 
 a {
+  font-size: 25px;
   text-decoration: none;
   color: beige;
 }
@@ -21,6 +24,24 @@ a:hover {
 }
 
 /* Section Styles */
+
+h1 {
+  display: block;
+  background: transparent;
+  padding: 30px;
+  color: beige;
+}
+
+h2 {
+  text-decoration: overline;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h4 {
+  color: black;
+  padding: 1px;
+}
 
 .main-nav {
   width: 100%;
@@ -71,23 +92,25 @@ header .profile-image {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 3px solid #e4c486;
+  border: 3px solid #a68e8a8c;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.5) rotate(45deg);
 }
 .tag {
-  background-color: transparent;
+  background-color: #a68e8a8c;
   color: beige;
   padding: 10px;
   border-radius: 5px;
   display: table;
-  margin: 40px auto;
+  margin: 20px auto;
 } 
 .location {
-  background-color: transparent;
+  background-color: #a68e8a8c;
   color: beige;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .card {
   margin: 15px;
@@ -104,8 +127,6 @@ header .profile-image:hover {
 }
 
 .card li {
-
-  padding: 20px 20px 20px 70px;
   list-style-type: circle;
 }
 
@@ -128,7 +149,7 @@ ul.skills {
 }
 
 .hobbies ul,li {
-  padding: 20px 40px 20px 70px;
+  padding: 10px 20px 10px 10px;
 }
 
 footer {
@@ -137,7 +158,7 @@ footer {
   padding: 20px 0 40px 20px;
 }
 
-footer .copyright {
+footer .resume-footer.copyright {
   top: -8px;
   font-size: .75em;
 }
@@ -214,50 +235,28 @@ a.social:hover {
 
 /* Resume's CSS */
 
-body {
-  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  text-align: center;
+.resume-body {
   background-image: linear-gradient(#deac3e,#deac3e,#deac3e,#e4c486,#e6cfb0 );
-  padding-left: 0px;
-  padding-right: 0px;
-  margin: 0px;
 }
 
-header {
+.resume-header {
   background: url('images/background_picture_yellow.jpg') no-repeat bottom center ;
   background-size: cover;
+  padding-top: 0px;
   overflow: hidden;
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30%;
 }
 
-h1 {
-  display: block;
-  background: transparent;
-  padding: 30px;
-  color: beige;
-}
-
-h2 {
-  text-decoration: overline;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-h4 {
-  color: black;
-  padding: 1px;
-}
-
-.main-image {
+.resume-image {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   margin-top: 2cm;
   margin-bottom: 2cm;
-  opacity: 0.9;
+  opacity: 0.8;
 }
-.main-image:hover {
+.resume-image:hover {
   transform: scale(1) rotate(25deg);
   opacity: 1.2;
 }
@@ -266,16 +265,7 @@ ul {
   list-style-position: outside;
   list-style-type: circle;
   display: inline-block;
-  padding-inline-start: 10px;
-}
-
-.go-home {
-  transform: scale(2);
-  opacity: 1;
-}
-
-.home :hover {
-  opacity: 0.5;
+  padding-inline-start: 20px;
 }
 
 .summaryQ {
@@ -306,8 +296,13 @@ ul {
   border-radius: 6px;
   transition: all .5s;
 }
+
 .education p {
   padding-top: 5px;
+}
+
+.employment li {
+  list-style-position: outside;
 }
 
 .employment {
@@ -322,9 +317,6 @@ ul {
   border-radius: 6px;
   transition: all .5s;
 }
-.employment li {
-  list-style-position: outside;
-}
 
 .topics {
   display: flex;
@@ -334,8 +326,8 @@ ul {
 li {
   font-weight: 500;
   display: list-item;
-  text-align: inherit;
-  padding: 15px 40px 15px 20px;
+  text-align: start;
+  padding: 15px 10px 15px 10px;
 }
 
 #webDev {
@@ -346,7 +338,7 @@ li {
   clear: both;
 }
 
-footer {
+.resume-footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
@@ -355,50 +347,45 @@ footer {
   margin: auto;
 }
 
-footer .copyright {
-  top: -8px;
-  font-size: .75em;
-}
-
-footer ul {
+.resume-footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-footer li {
+.resume-footer li {
   display: inline-block;
   padding: 0px !important;
 }
 
-#footer-p {
+#resume-footer-p {
   font-size: 12pt;
   max-width: 400px;
   margin: auto;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-a.social {
+a.socialResume {
   display: inline-block;
   text-indent: -9999px;
-  margin-top: 15px;
   margin-left: 5px;
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: 0.6;
   transition: all .5s;
 }
-a.linkedin {
+a.resume-linkedin {
   background-image: url(images/sleek-linkedin-circled-100.png);
   opacity: 0.7;
-  size: 10px;
+  size: auto;
 }
-a.github {
+a.resume-github {
   background-image: url(images/sleek-github-128.png);
   opacity: 0.7;
 }
-a.social:hover {
+a.socialResume:hover {
   opacity: 1;
 }
 
@@ -430,7 +417,7 @@ a.social:hover {
     line-height: 1.6em;
   }
 
-  footer {
+  .resume-footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
