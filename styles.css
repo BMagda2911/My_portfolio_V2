@@ -258,10 +258,57 @@
     margin-bottom: 15px;
   }
 
+   /* Styles for smaller screens screens */
+   @media screen and (max-width: 820px) {
+    
+    .navbar {
+      min-height: 90px;
+    }
 
+    .navbar_link-container-link {
+      transition-property: ;
+    }
+
+    .content {
+      flex-direction: row !important;
+      float: none;
+    }
+    
+    .card {
+      width: 33.33%;
+      margin: 15px;
+      max-width: 600px;
+    }
   
+    .card:hover {
+      border-color: #836a66;
+    }
+  
+    .card li {
+      list-style-type: circle;
+    }
+  
+    header {
+      min-height: 250px;
+    }
+  
+    main {
+      padding-top: 20px;
+    }
+  
+    main p {
+      line-height: 2.2em;
+    }
+  
+    footer {
+      font-size: 1em;
+      max-width: 700px;
+      margin: 40px auto;
+    }
+  
+  }
   /* Styles for larger screens */
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 821px) {
     
     .content {
         flex-direction: row !important;
@@ -298,7 +345,6 @@
       max-width: 1200px;
       margin: 40px auto;
     }
-  
   }
   
   /* Resume's CSS */
