@@ -1,480 +1,451 @@
 /* Global Layout Set-up */
 /* Removes all default paddings and margins in HTML*/
 * { 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
     
-  body {
-    margin: 1px;
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: center;
-    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    color: #222;
-    background-color: #deac3e;
-  }
+body {
+  margin: 1px;
+  padding: 0px;
+  text-align: center;
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  background-color: #deac3e;
+}
 
-  body::-webkit-scrollbar {
-    width: 0.5rem;
-  }
+body::-webkit-scrollbar {
+  width: .5rem;
+}
 
-  body::-webkit-scrollbar-track {
-    background: #deac3e;
-  }
+body::-webkit-scrollbar-track {
+  background: #deac3e;
+}
 
-  body::-webkit-scrollbar-thumb {
-    background:#7f6a6b;
-  }
-  /* Link Styles */
-  
-  a {
-    font-size: 25px;
-    text-decoration: none;
-    color: black;
-  }
-  a:hover {
-    color:	black;
-  }
-  
-  /* Section Styles */
+body::-webkit-scrollbar-thumb {
+  background:#7f6a6b;
+}
 
-  .total-width {
-    max-width: 1200px;
-    margin: auto;
-  }
+/* Link Styles */
 
-  .navbar {
-	width: 95%;
-	background-color: #deac3e;
-	min-height: 60px;
-	color: black;
-	font-size: 30px;
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  }
+a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
 
-  .navbar__container {
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-  }
+a:hover {
+  color:	black;
+}
 
-  .navbar__link-container {
-	display: flex;
-	flex-direction: row;
-	list-style-type: none;
-	justify-content: flex-start;
-  }
+/* Section Styles */
 
-  .navbar__list-item {
-	padding: 15px 0;
-	max-height: 35px;
-  }
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+}
 
-  .navbar__list-item:first-of-type {
-	width: 30%
-  }
+.navbar {
+  width: 95%;
+  background-color: #deac3e;
+  min-height: 60px;
+  color: black;
+  font-size: 30px;
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
 
-  .navbar__list-item:last-of-type {
-	width: 60%
-  }
+.navbar-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .navbar__link-container-list-item {
-	margin-left: 30px;
-  }
+.navbar-link-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-start;
+}
 
-  .navbar__link-container-list-item:first-of-type {
+.navbar-list-item {
+  padding: 15px 0;
+  max-height: 35px;
+}
+
+.navbar-list-item:first-of-type {
+  width: 30%
+}
+
+.navbar-list-item:last-of-type {
+  width: 60%
+}
+
+.navbar-link-container-list-item {
+  margin-left: 30px;
+}
+
+.navbar-link-container-list-item:first-of-type {
 	margin-left: 0px;
-  }
+}
 
-  .navbar_link-container-link {
+.navbar-link-container-link {
 	color: black;
 	text-decoration: none;
-	transition: 0.25s;
-  opacity: 0.5;
-  }
+	transition: .25s;
+  opacity: .5;
+}
 
-  .navbar_link-container-link:first-of-type {
-    margin-left: 5px;
-  }
+.navbar-link-container-link:first-of-type {
+  margin-left: 5px;
+}
 
-  .navbar_link-container-link:hover {
-	opacity: 1;
-  }
+.navbar-link-container-link:hover {
+  opacity: 1;
+}
 
-  .navbar_link-container-link-social {
-	margin-top: 2.5px;
-  }
+.navbar-link-container-link-social {
+  margin-top: 2px;
+}
 
-  h1 {
-    display: block;
-    background: transparent;
-    padding: 30px;
-    color: #e5cdaa;
-    opacity: 1;
-  }
-  
-  h2 {
-    text-decoration: none;
-    color: #836a66;
-  }
+h1 {
+  display: block;
+  background: transparent;
+  padding: 30px;
+  color: #e5cdaa;
+  opacity: 1;
+}
 
-  .h2-resume {
-    text-decoration: overline;
-    text-transform: uppercase;
-    text-align: center;
-  }
+h2 {
+  text-decoration: none;
+  color: #836a66;
+}
 
-  h3 {
-    text-align: center;
-  }
-  
-  header {
-    text-align: center;
-    background: url('images/flipped_background_picture_yellow.jpg') no-repeat;
-    background-size: cover;
-    background-position-x: 100%;
-    background-position-y: 45%;
-    overflow: hidden;
-    padding-top: 0px;
-    line-height: 1.5;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-  }
-  
-  header .profile-image {
-    margin-top: 50px;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 3px solid #a68e8a5e;
-    transition: all .5s;
-  }
+.headline-resume {
+  text-decoration: overline;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  background: url('images/flipped_background_picture_yellow.jpg') no-repeat;
+  background-size: cover;
+  background-position-y: 45%;
+  overflow: hidden;
+  padding-top: 0px;
+  line-height: 1.5;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+header .profile-image {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #a68e8a5e;
+  transition: all .5s;
+}
+
   header .profile-image:hover {
     transform: scale(1.2) rotate(45deg);
   }
-  .tag {
-    color: #72553b;
-    padding: 10px;
-    border-radius: 5px;
-    display: table;
-    margin: 20px auto;
-    margin-bottom: 0;
-  } 
-  .location {
-    margin-bottom: 20px;
-    margin-top: 0;
-  }
-  
-  ul.skills {
-    padding: 0;
-    text-align: center;
-  }
-  
-  .skills li {
-    border-radius: 6px;
-    display: inline-block;
-    background: #bc9b84;
-    color: black;
-    padding: 5px 10px;
-    margin: 5px;
-  }
 
-  .hobbies {
-    padding: 10px 20px 10px 30px !important;
-  }
+.tag {
+  color: #72553b;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 20px auto 0;
+} 
+
+.location {
+  margin: 0 auto 20px;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #bc9b84;
+  color: black;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.hobbies {
+  padding: 10px 20px 10px 30px !important;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
   
-  footer {
-    width: 100%;
-    min-height: 30px;
-  }
+.clearfix {
+  clear: both;
+}
+
+.content {
+  display: -ms-flexbox;
+  display: flex; 
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.card {
+  width: calc(100% - 15px);
+  text-align: left;
+  background: #e5cdaa;
+  border-bottom: 6px solid #bc9b84;
+  border-radius: 6px;
+  transition: all .5s;  
+  padding: 20px 10px;
+  margin: 8px auto;
+}
+
+.card:first-of-type {
+  margin-top: 15px;
+}
+
+.card:last-of-type {
+  margin-bottom: 15px;
+}
+
+.css-validity-icon {
+  border: 0;
+  width: 60px;
+  height: 24px;
+  margin: 5px;
+  align-items: center;
+}
+
+/* Resume's CSS */
+
+.resume-body {
+  background-image: linear-gradient(#deac3e,#deac3e,#deac3e,#e4c486,#e6cfb0 );
+}
+
+.resume-header {
+  background: url('images/background_picture_yellow.jpg') no-repeat bottom center ;
+  background-size: cover;
+  padding-top: 0px;
+  overflow: hidden;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+.resume-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 85px;
+  opacity: .8;  
+  transition: .25s;
+}
+.resume-image:hover {
+  transform: scale(1) rotate(25deg);
+  opacity: 1;
+}
+
+.back-button {
+  width: 64px;
+  height: 64px;
+  transition: .25s;
+}
+
+.back-button:hover {
+  transform: rotate(360deg);
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: circle;
+  display: inline-block;
+}
+
+.summary-q {
+  text-align: center;
+  margin: auto;
+  height: auto;
+  max-width: 600px;
+  padding: 15px 40px;
+  background-color: #deac3e;
+}
+
+.content p {
+  font-weight: 500;
+  color: black;
+  margin: 5%;
+}
+
+.resume-card {
+  width: 60%;
+  height: auto;
+  margin: 45px auto;
+  text-align: center;
+  border-bottom: 6px solid #836a66;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.education {
+  padding: 20px 40px;
+  background-image: linear-gradient(#deac3e,#ddb563,#e4c486);
+}
+
+.education p {
+  padding-top: 5px;
+}
   
-  footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+.employment {
+  padding: 20px 40px 20px 100px;
+}
+
+.employment li {
+  list-style-position: outside;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  font-weight: 500;
+  display: list-item;
+  text-align: start;
+  padding: 15px 10px;
+}
+
+.webDev {
+  font-weight: lighter;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.resume-footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px;
+  max-width: 300px;
+  margin: auto;
+  font-size: 12pt;
+}
+
+.resume-footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.resume-footer li {
+  display: inline-block;
+  padding: 0px !important;
+}
+
+.resume-footer-p {
+  font-size: 12pt;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.social-resume {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .6;
+  transition: all .5s;
+}
+
+.resume-linkedin {
+  background-image: url(images/linkedin.svg);
+  opacity: .7;
+  margin-left: 15px;
+}
+
+.resume-github {
+  background-image: url(images/github.svg);
+  opacity: .7;
+  margin-right: 15px;
+}
+
+.social-resume:hover {
+  opacity: 1;
+}
   
-  footer ul li {
-    display: inline-block;
-  }
-  
-  a.social {
-    display: inline-block;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    transition: all .5s;
-    background-repeat: no-repeat;
-  }
-  a.linkedin {
-    background-image: url(images/linkedin.svg);
-    opacity: 0.5;
-  }
-  
-  a.github {
-    background-image: url(images/github.svg);
-    opacity: 0.6;
-  }
-  
-  a.social:hover {
-    opacity: 1;
-  }
-  
-  .clearfix {
-    clear: both;
-  }
+.content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 8px;
+  flex-direction: column;
+}
+
+/* Styles for larger screens */
+
+@media screen and (min-width: 1200px) {
   
   .content {
-    display: -ms-flexbox;
-    display: flex; 
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 0 auto;
-    flex-direction: column;
+    flex-direction: row !important;
   }
   
   .card {
-    text-align: left;
-    background: #e5cdaa;
-    border-bottom: 6px solid #bc9b84;
-    border-radius: 6px;
-    transition: all .5s;    
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: calc(100% - 15px);
-    margin: 7.5px auto;
-  }
-  
-  .card:first-of-type {
-    margin-top: 15px;
-  }
-  
-  .card:last-of-type {
-    margin-bottom: 15px;
-  }
-
-  /* Styles for larger screens */
-  @media screen and (min-width: 1200px) {
-    
-    .content {
-      flex-direction: row !important;
-    }
-    
-    .card {
-      width: 33.33%;
-      margin: 15px;
-      max-width: 600px;
-    }
-  
-    .card:hover {
-      border-color: #836a66;
-    }
-  
-    .card li {
-      list-style-type: circle;
-    }
-  
-    header {
-      min-height: 470px;
-    }
-  
-    main {
-      padding-top: 20px;
-    }
-  
-    main p {
-      line-height: 2.2em;
-    }
-  
-    footer {
-      font-size: 1em;
-      margin: 40px auto;
-    }
-  }
-  
-  /* Resume's CSS */
-  
-  .resume-body {
-    background-image: linear-gradient(#deac3e,#deac3e,#deac3e,#e4c486,#e6cfb0 );
-  }
-  
-  .resume-header {
-    background: url('images/background_picture_yellow.jpg') no-repeat bottom center ;
-    background-size: cover;
-    padding-top: 0px;
-    overflow: hidden;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-  }
-  
-  .resume-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-top: 2cm;
-    margin-bottom: 2cm;
-    opacity: 0.8;  
-    transition: 0.25s;
-  }
-  .resume-image:hover {
-    transform: scale(1) rotate(25deg);
-    opacity: 1;
-  }
-  
-  .back-button {
-    width: 64px;
-    height: 64px;
-    transition: 0.25s;
-  }
-  
-  .back-button:hover {
-    transform: rotate(360deg);
-  }
-  
-  ul {
-    list-style-position: inside;
-    list-style-type: circle;
-    display: inline-block;
-  }
-  
-  .summary-Q {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+    width: 33.33%;
+    margin: 15px;
     max-width: 600px;
-    padding: 15px 40px 15px 40px;
-    background-color: #deac3e;
   }
-  
-  .content p {
-    font-weight: 500;
-    color: black;
-    margin: 5%;
+
+  .card:hover {
+    border-color: #836a66;
   }
-  
-  .education {
-    width: 60%;
-    height: auto;
-    margin: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 40px 20px 40px;
-    text-align: center;
-    background-image: linear-gradient(#deac3e,#ddb563,#e4c486 );
-    border-bottom: 6px solid #836a66;
-    border-radius: 6px;
-    transition: all .5s;
+
+  .card li {
+    list-style-type: circle;
   }
-  
-  .education p {
-    padding-top: 5px;
+
+  header {
+    min-height: 470px;
   }
-  
-  .employment li {
-    list-style-position: outside;
-  }
-  
-  .employment {
-    width: 60%;
-    height: auto;
-    margin: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 40px 20px 70px;
-    text-align: center;
-    border-bottom: 6px solid #836a66;
-    border-radius: 6px;
-    transition: all .5s;
-  }
-  
-  .topics {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  li {
-    font-weight: 500;
-    display: list-item;
-    text-align: start;
-    padding: 15px 10px 15px 10px;
-  }
-  
-  #webDev {
-    font-weight: lighter;
-  }
-  
-  .clearfix {
-    clear: both;
-  }
-  
-  .resume-footer {
-    width: 100%;
-    min-height: 30px;
-    padding: 20px 20px 20px 20px;
-    font-size: 1.3em;
-    max-width: 300px;
-    margin: auto;
-    font-size: 12pt;
-  }
-  
-  .resume-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding-bottom: 20px;
-  }
-  
-  .resume-footer li {
-    display: inline-block;
-    padding: 0px !important;
-  }
-  
-  #resume-footer-p {
-    font-size: 12pt;
-    max-width: 400px;
-    margin: auto;
+
+  main {
     padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  a.socialResume {
-    display: inline-block;
-    text-indent: -9999px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    opacity: 0.6;
-    transition: all .5s;
   }
 
-  a.resume-linkedin {
-    background-image: url(images/linkedin.svg);
-    opacity: 0.7;
-    margin-left: 15px;
+  main p {
+    line-height: 2.2em;
   }
 
-  a.resume-github {
-    background-image: url(images/github.svg);
-    opacity: 0.7;
-    margin-right: 15px;
+  footer {
+    font-size: 1em;
+    margin: 40px auto;
   }
-
-  a.socialResume:hover {
-    opacity: 1;
-  }
-   
-  .content {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin-bottom: 7.5px;
-    flex-direction: column;
-  }
+}
